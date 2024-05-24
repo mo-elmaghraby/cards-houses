@@ -1,0 +1,67 @@
+.all-houses > .one {
+    box-shadow: 0px 0px 8px 0px #00000085;
+    border-radius: 10px;
+}
+.one .image1 img,
+.image2 img,
+.image3 img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.all-houses .one .image1::before,
+.image2::before {
+    position: absolute;
+    content: "HOT";
+    bottom: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+}
+.all-houses .one .image1::after {
+    position: absolute;
+    content: "featured";
+    top: -15px;
+    left: 0;
+    padding: 5px 10px;
+    background-color: rgb(255, 72, 0);
+    color: white;
+}
+.all-houses .one .image1 .img2::after {
+    position: absolute;
+    content: "";
+    top: -11px;
+    left: 62px;
+    background-color: rgb(255, 72, 0);
+    color: white;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+}
+
+.all-houses .one  .img2::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(0, 150, 135, 0.548);
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+}
+.all-houses .one  .img2:hover:before {
+    width: 100%;
+    height: 99%;
+    cursor: pointer;
+}
+.one .ico {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    font-size: 25px;
+    margin-right: 15px;
+    color: white;
+}
